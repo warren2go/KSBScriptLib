@@ -5,17 +5,16 @@ using System.Text;
 
 namespace KSB_ScriptLib.Commands
 {
+    /// <summary>
+    /// Base interface to enable abstract implementation of commands.
+    /// </summary>
     public interface ICSGlobal
     {
-        //void cSetVar(dynamic owner, string name, object variable);
-
-        //T cGetVar<T>(dynamic owner, string name);
-
         void cEnableAI(dynamic handle);
 
         void cDisableAI(dynamic handle);
 
-        //void cSetCallback(dynamic owner, string name, string func);
+
 
         void cTimeout(dynamic owner, string func, int timeout);
 

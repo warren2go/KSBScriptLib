@@ -3,6 +3,11 @@ using KSB_ScriptLib.Commands;
 
 namespace KSB_ScriptLib.Structure
 {
+    /// <summary>
+    /// Concrete class with closed definitions/variables that remain constant for each script-instance.
+    /// This file is replaced with a specific implementation on the server, any customizations are ignored.
+    /// This file is intended for a guide only.
+    /// </summary>
     public class CSScript : CSScriptObject, ICSGlobal
     {
         public enum eScriptObjectType
@@ -32,15 +37,7 @@ namespace KSB_ScriptLib.Structure
 
         public static int WAIT_PLAYER_MAP_LOGIN_SEC_MAX = 30000;
 
-        //public void cSetVar(dynamic owner, string name, object variable)
-        //{
-        //    throw new NotImplementedException();
-        //}
 
-        //public T cGetVar<T>(dynamic owner, string name)
-        //{
-        //    throw new NotImplementedException();
-        //}
 
         public void cEnableAI(dynamic handle)
         {
@@ -51,11 +48,6 @@ namespace KSB_ScriptLib.Structure
         {
             throw new NotImplementedException();
         }
-
-        //public void cSetCallback(dynamic owner, string name, string func)
-        //{
-        //    throw new NotImplementedException();
-        //}
 
         public void cTimeout(dynamic owner, string func, int timeout)
         {

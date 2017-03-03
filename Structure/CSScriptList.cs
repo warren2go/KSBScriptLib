@@ -6,6 +6,10 @@ using System.Text;
 
 namespace KSB_ScriptLib.Structure
 {
+    /// <summary>
+    /// Custom list to achieve desired functionality and improve performance (or at least be able to control performance).
+    /// </summary>
+    /// <typeparam name="T"></typeparam>
     public class CSScriptList<T> : List<T>
     {
         private Random _random = new Random(DateTime.UtcNow.Millisecond);

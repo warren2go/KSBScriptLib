@@ -6,6 +6,10 @@ using System.Text;
 
 namespace KSB_ScriptLib.Structure
 {
+    /// <summary>
+    /// Prototype of an improved collection class to handle mapping of dynamic fields. (this is now embedded into CSScriptObject)
+    /// </summary>
+    /// <typeparam name="T"></typeparam>
     public class CSScriptCollection<T> : ConcurrentDictionary<string, T>
     {
         private Random _random = new Random(DateTime.UtcNow.Millisecond);
